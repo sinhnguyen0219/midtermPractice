@@ -8,7 +8,8 @@ public class HangmanTest {
     // Exam Question 1
     // Implement the Hangman available() method to make this 
     // unit test pass correctly.
-    @Test
+	//Test#1
+  @Test
     public void testAllLettersAvailableAtBeginning() {
         Hangman h = new Hangman();
         h.setWord("inconceivable");
@@ -17,11 +18,12 @@ public class HangmanTest {
             assertTrue(h.available(allLetters.charAt(i)));
         }
     }
-
+	
     // Exam Question 2
     // Implement the Hangman available() method to make this 
     // unit test pass correctly.
-    @Test
+    //Test#2
+	@Test
     public void testGuessLetterMakesItUnavailable() {
         Hangman h = new Hangman();
         h.setWord("inconceivable");
@@ -35,7 +37,8 @@ public class HangmanTest {
     // Exam Question 3
     // Implement the Hangman guess() method to make this 
     // unit test pass correctly.
-    @Test
+    //Test#3
+	@Test
     public void testGuessLetterReturnsCorrectOccurrences() {
         Hangman h = new Hangman();
         h.setWord("inconceivable");
@@ -48,7 +51,8 @@ public class HangmanTest {
     // letters before the word is guessed results in a loss. Then,
     // implement the Hangman class methods required to make the 
     // test pass correctly.
-    @Test
+    //Test#4
+	@Test
     public void testSixOrMoreMissesCausesALoss() {
         assertTrue(false);
     }
@@ -58,7 +62,8 @@ public class HangmanTest {
     // letters correctly before six misses results in a win. Then,
     // implement the Hangman class methods required to make the 
     // test pass correctly.
-    @Test
+    //Test#5
+	@Test
     public void testGuessingEveryLetterBeforeSixMissesCausesAWin() {
         assertTrue(false);
     }
