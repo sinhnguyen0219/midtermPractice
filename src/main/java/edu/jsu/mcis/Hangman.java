@@ -33,13 +33,19 @@ public class Hangman {
     
     
     public int guess(char c) {
-		int misses = 0;
+		int numberOfOccurrences = 0;
+		//int misses;
         if (available(c) == true){
-			usedLetters.add(c);
+			usedLetters.add(c);		
+        for(int i = 0; i < word.length(); i++) {
+			if (word.charAt(i) == c){
+				numberOfOccurrences++;
+			}
+        }	
 		}else{
-			misses++;
+		//	misses++;
 		}
-		return misses;
+		return numberOfOccurrences;
     }
     
     public Result getResult() {
