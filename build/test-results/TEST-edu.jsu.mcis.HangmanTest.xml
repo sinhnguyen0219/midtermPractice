@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.HangmanTest" tests="5" skipped="0" failures="4" errors="0" timestamp="2015-09-18T20:35:23" hostname="Sinh" time="0.076">
+<testsuite name="edu.jsu.mcis.HangmanTest" tests="5" skipped="0" failures="4" errors="0" timestamp="2015-09-18T20:57:01" hostname="Sinh" time="0.052">
   <properties/>
-  <testcase name="testSixOrMoreMissesCausesALoss" classname="edu.jsu.mcis.HangmanTest" time="0.016">
+  <testcase name="testSixOrMoreMissesCausesALoss" classname="edu.jsu.mcis.HangmanTest" time="0.044">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -52,7 +52,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testGuessLetterReturnsCorrectOccurrences" classname="edu.jsu.mcis.HangmanTest" time="0.06">
+  <testcase name="testGuessLetterReturnsCorrectOccurrences" classname="edu.jsu.mcis.HangmanTest" time="0.004">
     <failure message="java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

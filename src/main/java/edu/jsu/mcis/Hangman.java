@@ -10,6 +10,9 @@ public class Hangman {
     public Hangman() {
         word = "";
         usedLetters = new ArrayList<Character>();
+		//below tests by adding the letter a to the arraylist to see 
+		//if the first method works
+		//usedLetters.add('a');
     }
     
     public void setWord(String word) {
