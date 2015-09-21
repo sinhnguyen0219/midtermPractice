@@ -54,7 +54,15 @@ public class HangmanTest {
     //Test#4
 	@Test
     public void testSixOrMoreMissesCausesALoss() {
-        assertTrue(false);
+		Hangman h = new Hangman();
+        h.setWord("inconceivable");
+		h.guess('t');
+		h.guess('z');
+		h.guess('y');
+		h.guess('x');
+		h.guess('r');
+		h.guess('q');
+        assertEquals("LOSE", h.getResult());
     }
     
     // Exam Question 5
@@ -65,7 +73,17 @@ public class HangmanTest {
     //Test#5
 	@Test
     public void testGuessingEveryLetterBeforeSixMissesCausesAWin() {
-        assertTrue(false);
+		Hangman h = new Hangman();
+        h.setWord("inconceivable");
+		h.guess('i');
+		h.guess('n');
+		h.guess('c');
+		h.guess('e');
+		h.guess('v');
+		h.guess('a');
+		h.guess('b');
+		h.guess('l');
+        assertEquals("WIN", h.getResult());
     }
     
 }
