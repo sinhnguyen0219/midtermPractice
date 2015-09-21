@@ -76,11 +76,16 @@ public class HangmanTest {
 		Hangman h = new Hangman();
         h.setWord("inconceivable");
 		h.guess('i');
+		h.guess('t');
 		h.guess('n');
+		h.guess('z');
 		h.guess('c');
+		h.guess('y');
 		h.guess('e');
+		h.guess('x');
 		h.guess('v');
 		h.guess('a');
+		h.guess('r');
 		h.guess('b');
 		h.guess('l');
         assertEquals("WIN", h.getResult());

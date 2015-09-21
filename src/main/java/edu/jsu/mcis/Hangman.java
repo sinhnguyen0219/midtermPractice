@@ -6,7 +6,7 @@ public class Hangman {
     public enum Result {WIN, LOSE, NONE};
     private String word;
     private List<Character> usedLetters;
-	public int misses;
+	private int misses;
     //public int misses;
     public Hangman() {
         word = "";
